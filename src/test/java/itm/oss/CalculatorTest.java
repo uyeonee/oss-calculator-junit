@@ -49,7 +49,7 @@ class CalculatorTest {
     @Test
     @DisplayName("Test for function getNextPrime")
     void testGetNextPrime() {
-        assertEquals(11, calc.getNextPrime(5),"A next prime of 7 is 11.");
+        assertEquals(11, calc.getNextPrime(7),"A next prime of 7 is 11.");
     }
 
 }
