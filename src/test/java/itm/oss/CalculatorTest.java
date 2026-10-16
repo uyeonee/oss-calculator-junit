@@ -46,4 +46,10 @@ class CalculatorTest {
         assertFalse(calc.isPrime(-5), "There are not negative primer numbers.");
     }
 
+    @Test
+    @DisplayName("Test for function getNextPrime")
+    void testGetNextPrime() {
+        assertEquals(11, calc.getNextPrime(5),"A next prime of 7 is 11.");
+    }
+
 }
