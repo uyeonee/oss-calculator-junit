@@ -21,28 +21,28 @@ public class Calculator {
         return (double) a / b;
     }
 
-public int getNextPrime(int num){
-    int index = num;
-    while(true){
-        index +=1;
-        if (isPrime(num)){
-            return index;
+    public int getNextPrime(int num) {
+        int index = num;
+        while (true) {
+            index += 1;
+            if (isPrime(index)) {
+                return index;
+            }
         }
+
     }
 
-}
+    protected boolean isPrime(int num) {
 
-protected boolean isPrime(int num){
-
-    if (num<=1){
-        return false;
-    } 
-
-    for (int i = 2; i < num; i++){
-        if (num % i == 0){
+        if (num <= 1) {
             return false;
         }
+
+        for (int i = 2; i < num; i++) {
+            if (num % i == 0) {
+                return false;
+            }
+        }
+        return true;
     }
-    return true;
-}
 }
